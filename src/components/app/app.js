@@ -4,6 +4,7 @@ import Header from '../header/header';
 import '../../style/main.scss';
 import About from '../about/about';
 import Projects from '../projects/projects';
+import Contact from '../contact/contact';
 
 export default class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends React.Component {
           <Header/>
           <Route exact path='/' component={About}/>
           <Route exact path='/projects' component={Projects}/>
+          <Route exact path='/contact' component={Contact}/>
         </div>
       </BrowserRouter>
     );
