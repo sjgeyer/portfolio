@@ -17,7 +17,9 @@ export default class About extends React.Component {
     return (
       <div className='about'>
         <h1>About Me</h1>
-        <p>BIO HERE</p>
+        <p>Full-stack developer with experience in the MERN stack and a background in customer
+          service and environmental non-profits. Passionate about web design and data management
+          with a focus on efficiency and optimizing user experience.</p>
         <section>
           <h2>Languages, Libraries, and Frameworks</h2>
           <div>
@@ -30,10 +32,10 @@ export default class About extends React.Component {
             <img src={r} alt='r'/>
           </div>
           <div>
+            <img src={sass} alt='sass'/>
             <img src={node} alt='node'/>
             <img src={react} alt='react'/>
             <img src={redux} alt='redux'/>
-            <img src={sass} alt='sass'/>
           </div>
         </section>
         <section>
