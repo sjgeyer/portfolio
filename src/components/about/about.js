@@ -1,16 +1,21 @@
 import React from 'react';
 import './about.scss';
+import me from '../../assets/me.jpg';
 
 export default class About extends React.Component {
   render() {
     return (
       <div className='about'>
-        <h1>About Me</h1>
-        <div className='about-blurb'>
+        <div className='about-blurb-left'>
+          <img src={me} alt='me'/>
+        </div>
+        <div className='about-blurb-right'>
+          <h1>About Me</h1>
           <p>Full-stack developer with experience in the MERN stack and a background in customer
             service and environmental non-profits. Passionate about web design and data management
             with a focus on efficiency and optimizing user experience.</p>
         </div>
+
         <section className='left'>
           <div className='inner tech'>
             <h2>Technical Skills</h2>
