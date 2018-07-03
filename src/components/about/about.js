@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './about.scss';
 import me from '../../assets/me.jpg';
 
@@ -44,18 +45,17 @@ export default class About extends React.Component {
           <div className='inner education'>
             <h2>Degrees & Certifications</h2>
             <div>
-              <h3>Code Fellows</h3>
-              <p>Seattle, WA | 2018</p>
+              <h3>Code Fellows | Seattle, WA | 2018</h3>
               <p>Certificate - Advanced Software Development in Full-Stack Javascript</p>
             </div>
             <div>
-              <h3>University of Washington</h3>
-              <p>Seattle, WA | 2015</p>
+              <h3>University of Washington | Seattle, WA | 2015</h3>
               <p>BS - Ecology, Evolution, and Conservation Biology</p>
               <p>BA - Environmental Studies</p>
               <p>Minor - American Sign Language</p>
             </div>
           </div>
+          <Link to='/projects'><button>View my projects</button></Link>
         </section>
       </div>
     );
