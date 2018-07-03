@@ -1,13 +1,44 @@
+@import '../../style/vars';
+
 .about {
   text-align: center;
+  font-family: $marvel;
+
+  .about-blurb {
+    width: 70%;
+    margin: 1vw auto;
+    height: auto;
+  }
+  h1 {
+    font-family: $julius-sans-one;
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
 
   section {
-    div {
-      margin: 2vw auto;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    .inner {
+      box-sizing: border-box;
+      padding: 1vw;
+      border: 1px solid $main;
+      margin: 1vw;
     }
-    img {
-      max-height: 100px;
-      margin: 0 1vw;
+    .tech {
+      margin-left: 5vw;
+    }
+    .education {
+      margin-right: 5vw;
+    }
+    h2 {
+      font-family: $julius-sans-one;
+      font-size: 2vw;
     }
   }
 }

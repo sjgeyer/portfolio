@@ -1,15 +1,4 @@
 import React from 'react';
-import css from '../../assets/css.png';
-import html from '../../assets/html.png';
-import js from '../../assets/js.png';
-import mongo from '../../assets/mongo.png';
-import node from '../../assets/node.png';
-import postgres from '../../assets/postgres.png';
-import r from '../../assets/r.png';
-import react from '../../assets/react.png';
-import redux from '../../assets/redux.png';
-import ruby from '../../assets/ruby.png';
-import sass from '../../assets/sass.png';
 import './about.scss';
 
 export default class About extends React.Component {
@@ -17,30 +6,51 @@ export default class About extends React.Component {
     return (
       <div className='about'>
         <h1>About Me</h1>
-        <p>Full-stack developer with experience in the MERN stack and a background in customer
-          service and environmental non-profits. Passionate about web design and data management
-          with a focus on efficiency and optimizing user experience.</p>
-        <section>
-          <h2>Languages, Libraries, and Frameworks</h2>
-          <div>
-            <img src={js} alt='javascript'/>
-            <img src={html} alt='html'/>
-            <img src={css} alt='css'/>
-            <img src={mongo} alt='mongoDB'/>
-            <img src={postgres} alt='postgreSQL'/>
-            <img src={ruby} alt='ruby'/>
-            <img src={r} alt='r'/>
-          </div>
-          <div>
-            <img src={sass} alt='sass'/>
-            <img src={node} alt='node'/>
-            <img src={react} alt='react'/>
-            <img src={redux} alt='redux'/>
+        <div className='about-blurb'>
+          <p>Full-stack developer with experience in the MERN stack and a background in customer
+            service and environmental non-profits. Passionate about web design and data management
+            with a focus on efficiency and optimizing user experience.</p>
+        </div>
+        <section className='left'>
+          <div className='inner tech'>
+            <h2>Technical Skills</h2>
+            <div>
+              <h3>Languages</h3>
+              <p>JavaScript, HTML, CSS, SQL, Ruby, R</p>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <p>Git, GitHub, React, Redux, jQuery, Sass, Node, REST APIs, PostgreSQL, MongoDB,
+                Jest, Heroku, Travis Continuous Integration, Webstorm, VS Code, Atom, artillery.io,
+                Socket.io</p>
+            </div>
+            <div>
+              <h3>Operating Systems</h3>
+              <p>OS X, Windows, iOS, Android</p>
+            </div>
+            <div>
+              <h3>Methodologies</h3>
+              <p>Object-Oriented Programming (OOP), functional programming, test-driven development
+                (TDD), agile, scrum, MVC, SMACCS</p>
+            </div>
           </div>
         </section>
-        <section>
-          <h2>Hobbies</h2>
-          <p>Something here</p>
+        <section className='right'>
+          <div className='inner education'>
+            <h2>Degrees & Certifications</h2>
+            <div>
+              <h3>Code Fellows</h3>
+              <p>Seattle, WA | 2018</p>
+              <p>Certificate - Advanced Software Development in Full-Stack Javascript</p>
+            </div>
+            <div>
+              <h3>University of Washington</h3>
+              <p>Seattle, WA | 2015</p>
+              <p>BS - Ecology, Evolution, and Conservation Biology</p>
+              <p>BA - Environmental Studies</p>
+              <p>Minor - American Sign Language</p>
+            </div>
+          </div>
         </section>
       </div>
     );

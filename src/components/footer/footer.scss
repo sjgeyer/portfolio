@@ -1,0 +1,17 @@
+@import '../../style/vars';
+
+footer {
+  height: 5%;
+  font-family: $marvel;
+  background: white;
+  color: black;
+  text-align: center;
+  font-size: 1vw;
+  width: 100%;
+
+  p {
+    font-size: 1.5vw;
+    line-height: 100%;
+    vertical-align: bottom;
+  }
+}
