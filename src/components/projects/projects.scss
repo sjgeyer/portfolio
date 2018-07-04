@@ -9,23 +9,21 @@
     color: $main;
   }
   a:hover {
-    color: $main-light;
+    color: $main-medium;
   }
 
-  .left {
+  .left, .right {
     display: inline-block;
-    width: 30%;
-    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    padding: 2vw;
   }
 
   .right {
-    display: inline-block;
-    width: 70%;
-    vertical-align: top;
+    text-align: left;
   }
-
-  .spooky {
-    border-radius: 15px;
+  .left {
+    text-align: right;
   }
 
   section {
@@ -34,23 +32,28 @@
     padding: 2vw;
     box-shadow: 0.5vw 0.5vw $box-shadow;
     display: inline-block;
-  }
+    text-align: center;
 
-  img {
-    max-width: 50%;
-  }
+    .demo {
+      height: auto;
+      width: 100%;
 
-  .long-image {
-    max-width: 100%;
+      img {
+        width: 60%;
+        height: 60%;
+      }
+    }
   }
 
   h2 {
     font-size: 3vw;
-    margin: 0;
+    margin: 1vw 0;
+    font-family: $julius-sans-one;
   }
   h3 {
     font-size: 2vw;
     margin: 1vw 0;
+    font-family: $julius-sans-one;
   }
   p {
     font-size: 2vw;
