@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Marvel');
-$julius-sans-one: 'Julius Sans One', sans serif;
-$marvel: 'Marvel', sans serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+$serif: 'Roboto Slab', serif;
+$sans-serif: 'Roboto', sans serif;
 
 $main: #1477ff;
 $main-medium: #53a1ff;
 $main-light: #a5d9ff;
 $box-shadow: #d8d8d8;
+
+$p-desktop: 1.5vw;

@@ -1,7 +1,7 @@
 @import '../../style/vars';
 
 .contact {
-  font-family: $marvel;
+  font-family: $serif;
   font-size: 2vw;
   position: relative;
   height: 85%;
@@ -14,6 +14,7 @@
     vertical-align: bottom;
   }
   .blurb {
+    font-family: $serif;
     max-height: 60%;
   }
 }

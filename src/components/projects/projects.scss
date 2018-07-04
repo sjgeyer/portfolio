@@ -3,7 +3,7 @@
 .projects {
   padding: 3vw;
   height: auto;
-  font-family: $marvel;
+  font-family: $sans-serif;
 
   a {
     color: $main;
@@ -50,18 +50,18 @@
   h2 {
     font-size: 3vw;
     margin: 1vw 0;
-    font-family: $julius-sans-one;
+    font-family: $serif;
   }
   h3 {
     font-size: 2vw;
     margin: 1vw 0;
-    font-family: $julius-sans-one;
+    font-family: $serif;
   }
   p {
-    font-size: 2vw;
+    font-size: $p-desktop;
   }
   h4 {
     font-size: 1.3vw;
-    font-family: $julius-sans-one;
+    font-family: $serif;
   }
 }

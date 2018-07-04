@@ -1,7 +1,7 @@
 @import '../../style/vars';
 
 .about {
-  font-family: $marvel;
+  font-family: $sans-serif;
   box-sizing: border-box;
   position: relative;
   height: auto;
@@ -31,12 +31,12 @@
   }
 
   h1 {
-    font-family: $julius-sans-one;
+    font-family: $serif;
     font-size: 3vw;;
   }
 
   p {
-    font-size: 2vw;
+    font-size: $p-desktop;
   }
 
   section {
@@ -64,7 +64,7 @@
       padding-bottom: 3vw;
     }
     h2 {
-      font-family: $julius-sans-one;
+      font-family: $serif;
       font-size: 2vw;
       text-decoration: underline;
     }
