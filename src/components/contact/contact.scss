@@ -3,4 +3,17 @@
 .contact {
   font-family: $marvel;
   font-size: 2vw;
+  position: relative;
+  height: 85%;
+
+  img {
+    max-height: 12vw;
+    border-radius: 6vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    vertical-align: bottom;
+  }
+  .blurb {
+    max-height: 60%;
+  }
 }
