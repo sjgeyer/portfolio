@@ -1,4 +1,3 @@
-# sjgeyer.github.io
+# Personal portfolio
 
-Personal portfolio
-(Work in progress)
+Website to showcase myself and projects that I have worked on.
