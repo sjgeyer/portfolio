@@ -6,6 +6,8 @@ import pubhubLanding from '../../assets/pubhub-landing.png';
 import pubhubGif from '../../assets/pubhub-gif.gif';
 import spookyLanding from '../../assets/spooky-landing.png';
 import spookyGif from '../../assets/spooky-gif.gif';
+import rwcLanding from '../../assets/rwc-landing.png';
+import rwcGif from '../../assets/rwc-gif.gif';
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -14,7 +16,7 @@ export default class Projects extends React.Component {
       groupUp: groupUpLanding,
       spookySays: spookyLanding,
       pubhub: pubhubLanding,
-      rwc: '',
+      rwc: rwcLanding,
     };
   }
 
@@ -41,9 +43,9 @@ export default class Projects extends React.Component {
             <h3>Technologies</h3>
             <p> React, Redux, Express, Node, MongoDB, Babel, Webpack, Jest, Sass,
                 AWS S3, Heroku, Travis CI, Google OAuth</p>
+            <h4>Visit it live at <a href='http://groupup.site'>groupup.site</a> or view
+              the <a href='https://github.com/Group-Up'>Github</a></h4>
           </div>
-          <h3>Visit it live at <a href='http://groupup.site'>groupup.site</a> or view
-            the <a href='https://github.com/Group-Up'>Github</a></h3>
         </section>
         <section>
           <h2>PubHub</h2>
@@ -66,8 +68,8 @@ export default class Projects extends React.Component {
             <h3>Technologies</h3>
             <p>JavaScript, Node, MongoDB, Express, Jest, GraphHopper API, Google Places API,
               Twilio API, artillery.io, Heroku, Travis CI</p>
+            <h4>View the <a href='https://github.com/Pub-Hub'>Github</a></h4>
           </div>
-          <h3>View the <a href='https://github.com/Pub-Hub'>Github</a></h3>
         </section>
         <section>
           <h2>Spooky Says</h2>
@@ -86,30 +88,32 @@ export default class Projects extends React.Component {
           <div className='right'>
             <h3>Technologies</h3>
             <p>HTML, CSS, JavaScript</p>
+            <h4>Play it yourself at <a href='http://spookysays.site'>spookysays.site</a> or visit
+              the <a href='https://github.com/sjgeyer/simon-says'>Github</a></h4>
           </div>
-          <h3>Play it yourself at <a href='http://spookysays.site'>spookysays.site</a> or visit
-              the <a href='https://github.com/sjgeyer/simon-says'>Github</a></h3>
         </section>
         <section>
           <h2>Run Walk Crawl</h2>
           <div className='demo'>
-            <img src={this.state.rwc} alt='run walk crawl'
-                 onMouseOver={() => this.setState({ rwc: '' })}
-                 onMouseLeave={() => this.setState({ rwc: '' })}
+            <img src={this.state.rwc} alt='run walk crawl' className='tall'
+                 onMouseOver={() => this.setState({ rwc: rwcGif })}
+                 onMouseLeave={() => this.setState({ rwc: rwcLanding })}
             />
           </div>
           <div className='left'>
             <h3>Description</h3>
-            <p> A pub crawl generator that takes in a starting location, desired number
-                of stops, and preferred budget to make the best pub crawl possible.</p>
+            <p> A mobile-first, full stack pub crawl generator that takes in a starting location,
+                desired number of stops, and preferred budget and makes a pub crawl for the user.
+                Users can name crawls and save them to their profile.
+            </p>
           </div>
           <div className='right'>
             <h3>Technologies</h3>
             <p>HTML, CSS, JavaScript, jQuery, Zomato API, Google Maps API,
-              Handlebars, PostgreSQL, Express, Page.js, Heroku</p>
+                Handlebars, PostgreSQL, Express, Page.js, Heroku</p>
+            <h4>Create a crawl at <a href='http://runwalkcrawl.site'>runwalkcrawl.site</a> or visit
+              the <a href='https://github.com/Run-Walk-Crawl'>Github</a></h4>
           </div>
-          <h3>Create a crawl at <a href='http://runwalkcrawl.site'>runwalkcrawl.site</a> or visit
-            the <a href='https://github.com/Run-Walk-Crawl'>Github</a></h3>
         </section>
       </div>
     );

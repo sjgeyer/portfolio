@@ -40,7 +40,9 @@
 
       img {
         width: 60%;
-        height: 60%;
+      }
+      .tall {
+        width: 40%;
       }
     }
   }
@@ -57,5 +59,9 @@
   }
   p {
     font-size: 2vw;
+  }
+  h4 {
+    font-size: 1.3vw;
+    font-family: $julius-sans-one;
   }
 }
