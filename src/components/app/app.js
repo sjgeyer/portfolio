@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import Header from '../header/header';
 import Landing from '../landing/landing';
 import About from '../about/about';
@@ -12,14 +13,14 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <ScrollToTop>
           <Header/>
           <Route exact path='/' component={Landing}/>
           <Route exact path='/about' component={About}/>
           <Route exact path='/projects' component={Projects}/>
           <Route exact path='/contact' component={Contact}/>
           <Footer/>
-        </div>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

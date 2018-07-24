@@ -1,37 +1,18 @@
 import React from 'react';
 import './projects.scss';
 import groupUpLanding from '../../assets/group-up-landing.png';
-import groupUpGif from '../../assets/group-up.gif';
 import pubhubLanding from '../../assets/pubhub-landing.png';
-import pubhubGif from '../../assets/pubhub-gif.gif';
 import spookyLanding from '../../assets/spooky-landing.png';
-import spookyGif from '../../assets/spooky-gif.gif';
 import rwcLanding from '../../assets/rwc-landing.png';
-import rwcGif from '../../assets/rwc-gif.gif';
 
 export default class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      groupUp: groupUpLanding,
-      spookySays: spookyLanding,
-      pubhub: pubhubLanding,
-      rwc: rwcLanding,
-    };
-  }
-
   render() {
     return (
       <div className='projects'>
         <section>
           <h2>GroupUp</h2>
           <div className='demo'>
-            <img
-              src={this.state.groupUp}
-              alt='group up'
-              onMouseOver={() => this.setState({ groupUp: groupUpGif })}
-              onMouseLeave={() => this.setState({ groupUp: groupUpLanding })}
-            />
+            <img src={groupUpLanding} alt='group up'/>
           </div>
           <div className='left'>
             <h3>Description</h3>
@@ -50,12 +31,7 @@ export default class Projects extends React.Component {
         <section>
           <h2>PubHub</h2>
           <div className='demo'>
-            <img
-              src={this.state.pubhub}
-              alt='pubhub'
-              onMouseOver={() => this.setState({ pubhub: pubhubGif })}
-              onMouseLeave={() => this.setState({ pubhub: pubhubLanding })}
-            />
+            <img src={pubhubLanding} alt='pubhub'/>
           </div>
           <div className='left'>
             <h3>Description</h3>
@@ -74,11 +50,7 @@ export default class Projects extends React.Component {
         <section>
           <h2>Spooky Says</h2>
           <div className='demo'>
-            <img src={this.state.spookySays}
-                 alt='spooky says'
-                 onMouseOver={() => this.setState({ spookySays: spookyGif })}
-                 onMouseLeave={() => this.setState({ spookySays: spookyLanding })}
-            />
+            <img src={spookyLanding} alt='spooky says'/>
           </div>
           <div className='left'>
             <h3>Description</h3>
@@ -95,10 +67,7 @@ export default class Projects extends React.Component {
         <section>
           <h2>Run Walk Crawl</h2>
           <div className='demo'>
-            <img src={this.state.rwc} alt='run walk crawl' className='tall'
-                 onMouseOver={() => this.setState({ rwc: rwcGif })}
-                 onMouseLeave={() => this.setState({ rwc: rwcLanding })}
-            />
+            <img src={rwcLanding} alt='run walk crawl' className='tall'/>
           </div>
           <div className='left'>
             <h3>Description</h3>
